@@ -16,7 +16,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 def get_years():
 	year_of = {}
-	with open("../Dataset and Supporting Files/years_final.txt", "r") as years_file:
+	with open("../Files/years_final.txt", "r") as years_file:
 		for line in years_file.readlines():
 			line = line.split(":")			
 			year_of[int(line[0])] = int(line[1])
@@ -25,7 +25,7 @@ def get_years():
 def get_authors():
 	'''Returns a dict (indexed by paperid) of sets of authors'''
 	authors_of = {}
-	with open("../Dataset and Supporting Files/paper_author_sorted", 'r') as f:
+	with open("../Files/paper_author_sorted", 'r') as f:
 		for line in f:
 			items = line.split()
 			paper, authors = int(items[0]), [int(author) for author in items[1:]]
@@ -34,7 +34,7 @@ def get_authors():
 
 def get_titles():
 	title_of = {}
-	with open("../Dataset and Supporting Files/paper_title", "r") as titles_file:
+	with open("../Files/paper_title", "r") as titles_file:
 		for line in titles_file.readlines():
 			line = line.split()
 			context = ' '.join(line[1:])			
@@ -43,7 +43,7 @@ def get_titles():
 
 def get_fields():
 	field_of = {}
-	with open("../Dataset and Supporting Files/paper_fields", "r") as fields_file:
+	with open("../Files/paper_fields", "r") as fields_file:
 		for line in fields_file.readlines():
 			line = line.split()			
 			field_of[int(line[0])] = line[1]
@@ -61,7 +61,7 @@ citeds = []
 citationContexts = []
 
 lineNum = 0
-with open("../Dataset and Supporting Files/cited_citer_dump_processed_v3", 'r') as inputFile:
+with open("../Files/cited_citer_dump_processed_v3", 'r') as inputFile:
 	for line in inputFile:
 		lineNum += 1
 		if lineNum < 24:

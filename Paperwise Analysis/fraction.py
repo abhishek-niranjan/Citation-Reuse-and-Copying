@@ -28,7 +28,7 @@ Output: Produces tuples
 
 def get_years():
     year_of = {}
-    with open("../Dataset and Supporting Files/years_final.txt", "r") as years_file:
+    with open("../Files/years_final.txt", "r") as years_file:
         for line in years_file.readlines():
             line = line.split(":")            
             year_of[int(line[0])] = int(line[1])
@@ -37,7 +37,7 @@ def get_years():
 
 def get_titles():
     title_of = {}
-    with open("../Dataset and Supporting Files/paper_title", "r") as titles_file:
+    with open("../Files/paper_title", "r") as titles_file:
         for line in titles_file.readlines():
             line = line.split()
             context = ' '.join(line[1:])            
@@ -46,7 +46,7 @@ def get_titles():
 
 def paper_fields():
     field_of = {}
-    with open("../Dataset and Supporting Files/paper_fields", "r") as fields_file:
+    with open("../Files/paper_fields", "r") as fields_file:
         for line in fields_file.readlines():
             line = line.split()            
             field_of[int(line[0])] = str(line[1])
