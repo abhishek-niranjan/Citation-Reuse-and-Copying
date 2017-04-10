@@ -1,4 +1,6 @@
-######################################################################################### Document Prepared by: Nikhil Angad Bakshi 4th year Undergraduate at Mechanical Engineering Department, IIT Kharagpur nikhilangadbakshi@gmail.com #########################################################################################
+######################################################################################### 
+Document Prepared by: Nikhil Angad Bakshi 4th year Undergraduate at Mechanical Engineering Department, IIT Kharagpur nikhilangadbakshi@gmail.com 
+#########################################################################################
 
 To conduct the motivation-overall section of the paper.
 Step 1: Run the file create_file_cosine_sim.py - It will create a human readable file of all citer1 citer2 cited tuples and their citation context similarity uniquely by concatenation. This step is optional and takes very long to process. The final file will be downloaded if initial.py is run.
