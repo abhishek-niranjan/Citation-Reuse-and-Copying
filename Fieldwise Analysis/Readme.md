@@ -1,4 +1,4 @@
-1. To conduct the field-wise section of the paper. 
+To conduct the field-wise section of the paper. 
 
 Step 1: Run the file fieldAnalyze.py
 		- It will create 3 pickle file. 
