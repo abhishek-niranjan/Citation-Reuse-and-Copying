@@ -1,10 +1,3 @@
-#########################################################################################
-Document Prepared by: Abhishek Niranjan
-		      4th year Undergraduate at CSE Department, IIT Kharagpur
-		      abhishek.niranjan.iitkgp@gmail.com
-#########################################################################################
-
-
 1. To conduct the paper-wise section of the paper. 
 
 Step 1: Run the file paperWise1.py
