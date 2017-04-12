@@ -1,4 +1,4 @@
-1. To conduct the paper-wise section of the paper. 
+To conduct the paper-wise section of the paper. 
 
 Step 1: Run the file paperWise1.py
 		- It will create 11 pickle files. 
